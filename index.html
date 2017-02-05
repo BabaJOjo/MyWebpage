@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+	<title>Baba</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" type="image/png" href="p_logo5.png">
+	<script src="script.js"></script>
+</head>
+<body>
+
+<nav id="n-container" class="n-container">
+	<div id="n-mark" class="n-mark">
+		<a href="index.html">
+		<img onmouseenter="rotateY()" onload="rotateY()" id="mark" class="mark" src="p_logo4.png">
+		</a>
+	</div>
+	<div id="n-options" class="n-options">
+		<a href="index.html">Home</a>
+		<a href="Resume_Draft_5O.pdf">Resume</a>
+		<a href="../~bjo7/BadArguments/BadArguments.html">Bad Arguments</a>
+		<a href="https://github.com/BabaJOjo">GitHub</a>
+	</div>
+	<div id="c-pick" class="c-pick">
+		<div onclick="colorP(this.id)" id="c-blue" class="c-option"></div>
+		<div onclick="colorP(this.id)" id="c-black" class="c-option"></div>
+		<div onclick="colorP(this.id)" id="c-green" class="c-option"></div>
+		<div onclick="colorP(this.id)" id="c-yellow" class="c-option"></div>
+		<div onclick="colorP(this.id)" id="c-red" class="c-option"></div>
+		<div onclick="colorP(this.id)" id="c-purple" class="c-option"></div>
+	</div>
+</nav>
+
+<header id="h-container" class="h-container">
+	<div id="nav-op" class="nav-op">
+		<p onclick="operateNav()">&#9863;</p>
+	</div>
+	<div id="h-content" class="h-content">
+		<p class="quotes"><b>Thank you for your time! I'm Babatunde Ojo and it's a pleasure to have you here!</b></p>
+		<p class="quotes">&#8220;There is no gene for the human spirit&#8221;</br>
+		<em>Gattaca</em></p>
+		<p class="quotes">&#8220;What church could compete with the fireworks of the pure soul?&#8221;<br>
+		<em>The Illustrated Man</em></p>
+		<p class="quotes">&#8220;All of our experiences fuse into our personality. Everything that ever happened to us is an ingredient&#8221;<br>
+		<em>Malcolm X</em></p>
+		<p class="quotes">&#8220;Already seeking the next challenge, ceremony means nothing to him&#8221;<br>
+		<em>Street Fighter II Turbo</em></p>
+		<p class="quotes">&#8220;They may forget what you said, but they will never forget how you made them feel&#8221;<br>
+		<em>Carl W. Buehner</em></p>
+		<p class="quotes">&#8220;We don't have time to ask for things we don't have. We can only look for the best way to fight without them&#8221;<br>
+		<em>Eyeshield 21</em></p>
+		<p class="quotes">&#8220;The names change, but the streets stay the same&#8221;<br>
+		<em>The Legend of Korra</em></p>
+		<script src="script.js"></script>
+	</div>
+</header>
+
+<main id="m-container" class="m-container">
+	<div id="about" class="m-content">
+		<h1 class="m-section">I am a <a href="https://www.upwork.com/blog/2014/03/web-development-101-web-developer/" target="_blank">Web Developer</a>, <a href="http://contentini.com/content-strategists-what-do-they-do/" target="_blank">Content Strategist</a>, and Avid Learner</h1>
+		<p>I began learning web development at the start of 2016 because to me, programming is essentially the incantation chanted to bring ideas to life. After joining my school newspaper, <a href="http://njitvector.com/" target="_blank">The Vector</a>, I took on the roles as a Copy Editor, Senior Staff Writer, Layout Assistant, and Comic Editor. A few of us started our own YouTube channel called <a href="https://www.youtube.com/channel/UCcwwxbC745kuWlXHqW-sEkQ" target="_blank">Vector Life Video</a>, writing the scripts and sometimes featuring in the videos. Self-defense is very important to me and at <a href="http://njbjj.com/" target="_blank">Savarese Brazilian Jiu-jitsu</a> I have the opportunity to practice these moves, compete, or assist in teaching the children's class.</p>
+	</div>
+	<div id="contact" class="m-content">
+		<h1 class="m-section">Contact Me</h1>
+		<form action="email.php" method="post">
+			<label>Name:</label>
+			<input type="text" name="name" placeholder="Enter Name" class="small-input" required></input><br>
+			<label>Email:</label>
+			<input type="text" name="email" placeholder="Enter Email Address" class="small-input" required></input><br>
+			<label>Message:</label>
+			<textarea placeholder="No pressure" name="message" class="large-input" required></textarea><br>
+			<input type="submit" value="Send!" id="send" class="send"><br><br><br>
+		</form>
+	</div>
+</main>
+</body>
+</html>
