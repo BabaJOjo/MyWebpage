@@ -1,0 +1,266 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #f5f5f5;
+  background-attachment: fixed;
+  color: white;
+  line-height: 1.8;
+  font-family: sans-serif;
+}
+
+#n-container{
+	height: 100%;
+	width: 15%;
+  background: #00275E;
+	top: 0; left: 0;
+	z-index: 2;
+	font-size: 16px;
+	overflow-x: hidden;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-moz-transition: 0.5s;
+	text-align: center;
+	position: fixed;
+	border-right: 2px solid black;
+}
+
+#n-container.toggled{
+	width: 0;
+}
+
+#n-options{
+	padding-top: 100px;
+}
+
+#n-options a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#n-options a:hover{
+	background-color: #001533;
+}
+
+#mark{
+	padding-top: 10px;
+	width: 100px;
+	height: 100px;
+	max-height: 5.7em;
+	max-width: 5.7em;
+	cursor: pointer;
+}
+
+#mark.toggledR{
+	animation: rotate-y 2s;
+}
+
+#h-container{
+	width: 85%;
+  height: 85px;
+  background: #00275E;
+  display: block;
+  top: 0; right: 0;
+  text-align: center;
+  border-bottom: 2px solid black;
+	z-index: 1;
+	position: fixed;
+	overflow: hidden;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-moz-transition: 0.5s;
+	line-height: 1.2;
+}
+
+#h-container.toggled{
+	width: 100%;
+	transition: 0.5s;
+}
+
+#h-content{
+	display: inline-block;
+	z-index: 1;
+	margin: 0;
+	top: 0;
+	width: 80%;
+	height: 90%;
+	overflow: hidden;
+	font-size: .9em;
+}
+
+.quotes{
+	display: none;
+	animation: fade 10s;
+}
+
+#nav-op{
+	display: block;
+	height: 10px;
+	z-index: 2;
+	font-size: 32px;
+	text-align: left;
+}
+
+#nav-op p{
+	padding-left: 20px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#n-logos{
+	padding-top: 70px;
+}
+
+.n-logos img{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+#m-container{
+	width: 85%;
+	height: 100%;
+	display: block;
+	background-color: transparent;
+	color: black;
+  bottom: 0; right: 0;
+	z-index: 0;
+	position: absolute;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-moz-transition: 0.5s;
+	font-size: 1em;
+}
+
+#m-container.toggled{
+	width: 100%;
+	transition: 0.5s;
+}
+
+.m-content:first-child{
+  padding-top: 100px;
+}
+
+.m-content{
+  text-align: left;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.n-logo{
+	display: inline-block;
+}
+
+@keyframes fade{
+	0%{ opacity: 0;}
+	50%{ opacity: 1;}
+	60%{ opacity: .8;}
+	65%{ opacity: .7;}
+	70%{ opacity: .6;}
+	75%{ opacity: .5;}
+	80%{ opacity: .4;}
+	85%{ opacity: .3;}
+	90%{ opacity: .2;}
+	95%{ opacity: .1;}
+	100%{ opacity: 0;}
+}
+
+@keyframes rotate-y{
+	from{ transform: rotateY(0deg);}
+	to{ transform: rotateY(360deg);}
+}
+
+/*Mobile*/
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 505px) {
+	#n-container{
+		width: 0%;
+		font-size: 32px; 
+	}
+	#n-container.toggled{
+		width: 20%;
+	}
+	#h-container{
+		width: 100%;
+		position: absolute;
+		height: 140px;
+		font-size: 28px;
+	}
+	#h-container.toggled{
+		width: 80%;
+	}
+	#nav-op{
+		font-size: 75px;
+	}
+	#m-container{
+		width: 100%;
+		font-size: 32px;
+	}
+	#m-container.toggled{
+		width: 80%;
+	}
+	.m-content:first-child{
+  padding-top: 145px;
+	}
+	#mark{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+/*Tablets*/
+@media only screen and (min-device-width : 599px) 
+and (max-device-width : 1024px) { 
+	#n-container{
+		width: 0%;
+		font-size: 32px; 
+	}
+	#n-container.toggled{
+		width: 20%;
+	}
+	#h-container{
+		width: 100%;
+		position: absolute;
+		height: 140px;
+		font-size: 30px;
+	}
+	#h-container.toggled{
+		width: 80%;
+	}
+	#nav-op{
+		font-size: 75px;
+	}
+	#m-container{
+		width: 100%;
+		font-size: 28px;
+	}
+	#m-container.toggled{
+		width: 80%;
+	}
+	.m-content:first-child{
+  padding-top: 145px;
+	}
+	#mark{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+/*Laptops or larger*/
+@media only screen and (min-device-width:1025px) {
+	
+}
